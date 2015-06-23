@@ -1,27 +1,28 @@
-/*CSS reset*/
+/* Makeshift CSS Reset */
 {
     margin: 0;
     padding: 0;
 }
 
+/* Tell the browser to render HTML 5 elements as block */
 header, footer, aside, nav, article {
     display: block;
 }
 
-body{
-    margin: auto;
+body {
+    margin: 0 auto;
     width: 940px;
     font: 13px/22px Helvetica, Arial, sans-serif;
-    background: #e0e0e0;
+    background: #cccccc;
 }
 
 h2 {
     font-size: 28px;
-    line-height: 22px;
-    padding: 11px 0;
+    line-height: 44px;
+    padding: 22px 0;
 }
 
-h3{
+h3 {
     font-size: 18px;
     line-height: 22px;
     padding: 11px 0;
@@ -67,9 +68,46 @@ nav ul li.selected a {
     color: #fff;
 }
 
-nav ul li.subscribe a {
-    margin-left: 22px;
-    padding-left: 33px;
-    text-align: left;
-    background: url("rss.png") left center no-repeat;
+section {
+    margin-top: 3%;
+    /*margin-top: 70px;*/
+    padding: 10px;
+}
+
+/* page core */
+div#main {
+    display: block;
+    clear: both;
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+section#left {
+    width: 550px;
+    float: left;
+    margin: 0 15px;
+}
+section#right {
+    float: left;
+    width: 300px;
+}
+
+
+/* clearfix */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
 }

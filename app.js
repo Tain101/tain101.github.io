@@ -1,22 +1,64 @@
-var websiteApp = angular.module('websiteApp', ['ngRoute']);
+var websiteApp = angular.module('websiteApp', ['ui.router']);
 
-websiteApp.config(function($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl: 'pages/home.html',
-            controller: 'mainController'
+websiteApp.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/404');
+
+    $stateProvider
+        .state('home', {
+            url: '/',
+
+            views: {
+                "headerView": {
+                    controller: 'mainController',
+                    templateUrl: 'pages/header.html'
+                },
+                "mainView": {
+                    controller: 'mainController',
+                    templateUrl: 'pages/home.html'
+                }
+            }
         })
-        .when('/about', {
-            templateUrl: 'pages/about.html',
-            controller: 'mainController'
+        .state('about', {
+            url: '/about',
+
+            views: {
+                "headerView": {
+                    controller: 'mainController',
+                    templateUrl: 'pages/header.html'
+                },
+                "mainView": {
+                    controller: 'mainController',
+                    templateUrl: 'pages/about.html'
+                }
+            }
         })
-        .when('/contact', {
-            templateUrl: 'pages/contact.html',
-            controller: 'contactController'
+        .state('contact', {
+            url: '/contact',
+
+            views: {
+                "headerView": {
+                    controller: 'contactController',
+                    templateUrl: 'pages/header.html'
+                },
+                "mainView": {
+                    controller: 'contactController',
+                    templateUrl: 'pages/contact.html'
+                }
+            }
         })
-        .when('/portfolio', {
-            templateUrl: 'pages/portfolio.html',
-            controller: 'portfolioController'
+        .state('portfolio', {
+            url: '/portfolio',
+
+            views: {
+                "headerView": {
+                    controller: 'portfolioController',
+                    templateUrl: 'pages/header.html'
+                },
+                "mainView": {
+                    controller: 'portfolioController',
+                    templateUrl: 'pages/portfolio.html'
+                }
+            }
         });
 });
 
@@ -30,6 +72,7 @@ websiteApp.controller('mainController', function($scope) {
 });
 
 websiteApp.controller('contactController', function($scope) {
+    $scope.title = 'Contact Information';
     $scope.contactInfo = [{
         'email': 'tain.premo@gmail.com',
         'githup': 'https://github.com/Tain101'
@@ -38,7 +81,7 @@ websiteApp.controller('contactController', function($scope) {
 
 websiteApp.controller('portfolioController', function($scope) {
 
-    $scope.title = 'portfolioController';
+    $scope.title = 'Portfolio';
 
     $scope.workExperience = [{
         'location': 'Iowa State University, Department of Computer Science, Ames, IA',

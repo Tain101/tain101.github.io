@@ -1,42 +1,34 @@
-<article id="main">
-    <header>
-        <h2>Portfolio</h2>
-        <h2>{{ title }}</h2>
-    </header>
-    <section class="wrapper style5">
-        <div class="inner">
-            <h2>Work Experience: </h2>
-            <div ng-repeat="WExperience in workExperience">
-                <h4>{{ WExperience.location }}</h4>
-                <h5>{{ WExperience.date }}</h5>
-                <h6>{{ WExperience.title }}</h6>
-                <div ng-repeat="description in WExperience.description">
-                    <p>{{ description }}</p>
-                </div>
-                <b>Experienced: </b>
-                <ul ng-repeat="experienceText in WExperience.experiences">
-                    <li>{{ experienceText }}</li>
-                </ul>
-            </div>
-            <h2>Group Projects: </h2>
-            <div ng-repeat="GProject in groupProjects">
-                <h4><a href="{{ GProject.link }}">{{ GProject.title }}:</a></h4>
-                <h6><a href="{{ GProject.repository }}"><div ng-if="GProject.repository != ''">repo</div></a></h6>
-                <div ng-repeat="text in GProject.description">
-                <p>
-                    {{ text }}
-                </p>
-                </div>
-            </div>
-            <h2>Solo Projects: </h2>
-            <div ng-repeat="SProject in soloProjects">
-                <h4><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h4>
-                <h6><a href="{{ SProject.repository }}"><div ng-if="SProject.repository != ''">repo</div></a></h6>
-                <div ng-repeat="text in SProject.description">
-                <p>
-                    {{ text }}
-                </p>
-            </div>
+<div class="inner">
+    <h2>Work Experience: </h2>
+    <div ng-repeat="WExperience in workExperience">
+        <h4>{{ WExperience.location }}</h4>
+        <h5>{{ WExperience.date }}</h5>
+        <h6>{{ WExperience.title }}</h6>
+        <div ng-repeat="description in WExperience.description">
+            <p>{{ description }}</p>
         </div>
-    </section>
-</article>
+        <b>Experienced: </b>
+        <ul ng-repeat="experienceText in WExperience.experiences">
+            <li>{{ experienceText }}</li>
+        </ul>
+    </div>
+    <h2>Group Projects: </h2>
+    <div ng-repeat="GProject in groupProjects">
+        <h4><a href="{{ GProject.link }}">{{ GProject.title }}:</a></h4>
+        <h6><a href="{{ GProject.repository }}"><div ng-if="GProject.repository != ''">repo</div></a></h6>
+        <div ng-repeat="text in GProject.description">
+            <p>
+                {{ text }}
+            </p>
+        </div>
+    </div>
+    <h2>Solo Projects: </h2>
+    <div ng-repeat="SProject in soloProjects">
+        <h4><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h4>
+        <h6><a href="{{ SProject.repository }}"><div ng-if="SProject.repository != ''">repo</div></a></h6>
+        <div ng-repeat="text in SProject.description">
+            <p>
+                {{ text }}
+            </p>
+        </div>
+    </div>

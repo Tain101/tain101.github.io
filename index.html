@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
-<html ng-app="websiteApp">
+<html ng-app="websiteApp" ng-controller="mainController">
     <head>
         <title>{{ title }}</title>
     </head>
-    <body ng-controller="mainController">
+    <body >
         <header>
-            <h1>{{ title }}</h1>
+            <div ui-view="headerView"></div>
         </header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a ui-sref="home">Home</a></li>
+                <li><a ui-sref="portfolio">Portfolio</a></li>
+                <li><a ui-sref="about">About</a></li>
+                <li><a ui-sref="contact">Contact</a></li>
             </ul>
         </nav>
-        <section id="main">
-            <div ng-view></div>
+        <section id="main" class="clearfix">
+            <div ui-view='mainView'></div>
         </section>
         <footer>
             <ul>
@@ -26,9 +26,14 @@
                 <li>&copy; Taylor Premo 2015</li>
             </ul>
         </footer>
-        <link rel=stylesheet href="assets/style.css">
-        <script src="assets/js/angular.min.js"></script>
-        <script src="assets/js/angular-route.min.js"></script>
-        <script src="app.js"></script>
+
+        <div ui-view="header"></div>
+        <div ui-view="nav"></div>
+        <div ui-view="main"></div>
+        <div ui-view="footer"></div>
     </body>
+    <link rel=stylesheet href="assets/style.css">
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
 </html>
