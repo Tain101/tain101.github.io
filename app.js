@@ -3,19 +3,19 @@ var websiteApp = angular.module('websiteApp', ['ngRoute']);
 websiteApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templatUrl: 'pages/home.html',
+            templateUrl: 'pages/home.html',
             controller: 'mainController'
         })
         .when('/about', {
-            templatUrl: 'pages/about.html',
+            templateUrl: 'pages/about.html',
             controller: 'mainController'
         })
         .when('/contact', {
-            templatUrl: 'pages/contact.html',
+            templateUrl: 'pages/contact.html',
             controller: 'contactController'
         })
         .when('/portfolio', {
-            templatUrl: 'pages/portfolio.html',
+            templateUrl: 'pages/portfolio.html',
             controller: 'portfolioController'
         });
 });

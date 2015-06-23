@@ -1,89 +1,22 @@
 <!DOCTYPE HTML>
-<!--
-Spectral by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html ng-app="websiteApp">
     <head>
         <title>Taylor Premo</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/style.css" />
-        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie/v9.css" /><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
-        <LINK REL="icon" HREF="favicon.ico">
     </head>
-    <body class="landing" ng-controller="mainController">
-
-        <!-- Page Wrapper -->
-        <div id="page-wrapper">
-            <!-- Header -->
-            <header id="header" class="alt">
-                <h1><a href="index.html">{{ title }}</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li class="special">
-                            <a href="#" class="menuToggle"><span>Menu</span></a>
-                            <div id="menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#contact">Contact</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-            <!-- Banner -->
-            <section id="banner">
-                <div class="inner">
-                    <h2>Taylor Premo</h2>
-                    <p>-</p>
-                    <ul class="actions">
-                        <li><a href="https://github.com/Tain101" class="button special">github</a></li>
-                    </ul>
-                </div>
-                <!-- <a href="#one" class="more scrolly">Learn More</a> -->
-            </section>
-
-            <!-- Footer -->
-            <footer id="footer">
-                <ul class="icons">
-                    <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-                    <li><a href="mailto:tain.premo@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Taylor Premo 2015</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </footer>
-        </div>
-
+    <body ng-controller="mainController">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
         <!-- main page -->
-            <div id="main">
-                <div ng-view></div>
-            </div>
-
+        <div id="main">
+            <div ng-view></div>
+        </div>
         <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrollex.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/init.js"></script>
-        <script src="lib/angular.min.js"></script>
-        <script src="lib/angular-route.min.js"></script>
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.min.js"></script>
         <script src="app.js"></script>
     </body>
 </html>
