@@ -38,6 +38,8 @@ websiteApp.controller('contactController', function($scope) {
 
 websiteApp.controller('portfolioController', function($scope) {
 
+    $scope.title = 'portfolioController';
+
     $scope.workExperience = [{
         'location': 'Iowa State University, Department of Computer Science, Ames, IA',
         'date': 'Summer 2014',

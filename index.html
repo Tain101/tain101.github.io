@@ -1,20 +1,32 @@
 <!DOCTYPE HTML>
 <html ng-app="websiteApp">
     <head>
-        <title>Taylor Premo</title>
+        <title>{{ title }}</title>
     </head>
     <body ng-controller="mainController">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <!-- main page -->
-        <div id="main">
+        <header>
+            <h1>{{ title }}</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="main">
             <div ng-view></div>
-        </div>
-        <!-- Scripts -->
+        </section>
+        <footer>
+            <ul>
+                <li><a href="mailto:tain.premo@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+            </ul>
+            <ul>
+                <li>&copy; Taylor Premo 2015</li>
+            </ul>
+        </footer>
+        <link rel=stylesheet href="assets/style.css">
         <script src="assets/js/angular.min.js"></script>
         <script src="assets/js/angular-route.min.js"></script>
         <script src="app.js"></script>
