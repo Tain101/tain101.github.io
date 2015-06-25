@@ -84,7 +84,7 @@ websiteApp.controller('portfolioController', function($scope) {
     $scope.title = 'Portfolio';
 
     $scope.workExperience = [{
-        'location': 'Iowa State University, Department of Computer Science, Ames, IA',
+        'location': 'Iowa State University, Department of Computer Science',
         'date': 'Summer 2014',
         'title': 'web devlopment',
         'description': [
@@ -95,7 +95,7 @@ websiteApp.controller('portfolioController', function($scope) {
             'Web development'
         ]
     }, {
-        'location': '',
+        'location': 'Iowa State University, Department of Computer Science',
         'date': 'Summer 2013',
         'title': 'Web and server development',
         'description': [

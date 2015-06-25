@@ -1,34 +1,46 @@
-<div class="inner">
-    <h2>Work Experience: </h2>
+<section>
+    <header class="major">
+        <h2>Work Experience</h2>
+    </header>
     <div ng-repeat="WExperience in workExperience">
-        <h4>{{ WExperience.location }}</h4>
-        <h5>{{ WExperience.date }}</h5>
-        <h6>{{ WExperience.title }}</h6>
+        <header>
+            <h2>{{ WExperience.title }}</h2>
+            <p>{{ WExperience.date }} | {{ WExperience.location }}</p>
+        </header>
         <div ng-repeat="description in WExperience.description">
-            <p>{{ description }}</p>
+            <p margin-left:5em>{{ description }}</p>
         </div>
         <b>Experienced: </b>
         <ul ng-repeat="experienceText in WExperience.experiences">
-            <li>{{ experienceText }}</li>
+            <li> - {{ experienceText }}</li>
         </ul>
     </div>
-    <h2>Group Projects: </h2>
+</section>
+<section>
+    <header class="major">
+        <h2>Group Projects</h2>
+    </header>
     <div ng-repeat="GProject in groupProjects">
-        <h4><a href="{{ GProject.link }}">{{ GProject.title }}:</a></h4>
-        <h6><a href="{{ GProject.repository }}"><div ng-if="GProject.repository != ''">repo</div></a></h6>
+        <h3><a href="{{ GProject.link }}">{{ GProject.title }}:</a></h3>
+        <header>
+            <a href="{{ GProject.repository }}"><p ng-if="GProject.repository != ''">repo</p></a>
+        </header>
         <div ng-repeat="text in GProject.description">
-            <p>
-                {{ text }}
-            </p>
+            {{ text }}
         </div>
     </div>
-    <h2>Solo Projects: </h2>
+</section>
+<section>
+    <header class="major">
+        <h2>Solo Projects</h2>
+    </header>
     <div ng-repeat="SProject in soloProjects">
-        <h4><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h4>
-        <h6><a href="{{ SProject.repository }}"><div ng-if="SProject.repository != ''">repo</div></a></h6>
+        <h3><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h3>
+        <header>
+            <a href="{{ SProject.repository }}"><p ng-if="SProject.repository != ''">repo</p></a>
+        </header>
         <div ng-repeat="text in SProject.description">
-            <p>
-                {{ text }}
-            </p>
+            {{ text }}
         </div>
     </div>
+</section>

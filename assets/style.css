@@ -9,6 +9,11 @@ header, footer, aside, nav, article {
     display: block;
 }
 
+header {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
 body {
     margin: 0 auto;
     width: 940px;
@@ -37,6 +42,7 @@ nav {
     left: 0;
     width: 100%;
     background-color: #aaaaaa;
+    box-shadow: 0px 3px 5px #888888;
 }
 
 nav ul {
