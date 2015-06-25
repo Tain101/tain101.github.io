@@ -59,6 +59,21 @@ websiteApp.config(function($stateProvider, $urlRouterProvider) {
                     templateUrl: 'pages/portfolio.html'
                 }
             }
+        })
+        .state('404', {
+            url: '/404',
+
+            views: {
+                "headerView": {
+
+                    controller: '404Controller',
+                    templateUrl: 'pages/header.html'
+                },
+                "mainView": {
+                    controller: '404Controller',
+                    templateUrl: 'pages/404.html'
+                }
+            }
         });
 });
 
@@ -148,4 +163,10 @@ websiteApp.controller('portfolioController', function($scope) {
             'This is an experiment in genetic algorithms. The idea was to create units that would need to eat, mate, and avoid obstacles, in order for the species to survive. They would learn to navigate the map based on the moves their parents have made. Unfortunately at the time I had virtually zero experience with javascript so the code was too resource heavy to coninue. I hope to rewrite it at some point.'
         ]
     }];
+});
+
+websiteApp.controller('404Controller', function($scope) {
+    $scope.title = '404';
+    $scope.message = 'Oh no! It looks like you might be lost.';
+    $scope.link = 'home';
 });

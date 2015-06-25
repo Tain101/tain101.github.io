@@ -21,6 +21,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div ui-view="headerView"></div>
                 <!-- Nav Bar -->
                 <nav id="nav">
+                    <div ui-view="navView"></div>
                     <ul>
                         <li><a ui-sref="home">Home</a></li>
                         <li><a ui-sref="portfolio">Portfolio</a></li>
@@ -34,71 +35,23 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 <div class="container">
                     <!-- Content -->
                     <div id="content" ui-view='mainView'>
-                        <!-- STATR -->
-                        <ul n>
-            <li>{experienceText }}</li>
-            <li>asdfd</li><li>{experienceText }}</li>
-            <li>asdfd</li><li>{experienceText }}</li>
-            <li>asdfd</li><li>{experienceText }}</li>
-            <li>asdfd</li><li>{experienceText }}</li>
-            <li>asdfd</li>
-        </ul>
-        <h3><a href="{{ GProject.link }}"> GProject.title }}:</a></h3>
-                        <section>
-    <header class="major">
-        <h2>Work Experience</h2>
-    </header>
-    <div ng-repeat="WExperience in workExperience">
-        <header>
-            <h2>{{ WExperience.title }}</h2>
-            <p>{{ WExperience.date }} | {{ WExperience.location }}</p>
-        </header>
-        <div ng-repeat="description in WExperience.description">
-            <p>{{ description }}</p>
-        </div>
-        <b>Experienced: </b>
-        <ul ng-repeat="experienceText in WExperience.experiences">
-            <li>{{ experienceText }}</li>
-        </ul>
-    </div>
-</section>
-<section>
-    <h2>Group Projects: </h2>
-    <div ng-repeat="GProject in groupProjects">
-        <h3><a href="{{ GProject.link }}">{{ GProject.title }}:</a></h3>
-        <h4><a href="{{ GProject.repository }}"><div ng-if="GProject.repository != ''">repo</div></a></h4>
-        <div ng-repeat="text in GProject.description">
-            {{ text }}
-        </div>
-    </div></section>
-    <section>
-        <h2>Solo Projects: </h2>
-        <div ng-repeat="SProject in soloProjects">
-            <h3><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h3>
-            <h4><div ng-if="SProject.repository != ''"><a href="{{ SProject.repository }}">repo</a></div></h4>
-            <div ng-repeat="text in SProject.description">
-                {{ text }}
-            </div>
-        </div>
-    </section>
-<!-- STOP -->
                     </div>
                 </div>
             </section>
-            <div ui-view="header"></div>
-            <div ui-view="nav"></div>
-            <div ui-view="main"></div>
-            <div ui-view="footer"></div>
+
+
+
             <!-- Footer -->
             <div id="footer">
+            <div ui-view="footerView"></div>
                 <!-- Icons -->
                 <ul class="icons">
                     <li><a href="mailto:tain.premo@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
+                    <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
                     <li><a href="https://github.com/Tain101" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                    <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                    <!-- <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
+                    <!-- <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
                 </ul>
                 <!-- Copyright -->
                 <div class="copyright">
