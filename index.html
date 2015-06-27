@@ -4,15 +4,13 @@ Arcana by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html ng-app="websiteApp" ng-controller="mainController">
+<html ng-app="websiteApp" ng-controller="homeController">
     <head>
         <title>{{ title }}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
     </head>
     <body>
         <div id="page-wrapper">
@@ -61,17 +59,27 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                 </div>
             </div>
         </div>
-        <!-- Scripts -->
+
+    </div>
+</body>
+<link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.dropotron.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
         <script src="assets/js/util.js"></script>
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
         <script src="assets/js/main.js"></script>
-    </div>
-</body>
 <!-- <link rel=stylesheet href="assets/style.css"> -->
 <script src="assets/js/angular.min.js"></script>
 <script src="assets/js/angular-ui-router.min.js"></script>
-<script src="app.js"></script>
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/components/404/404Controller.js"></script>
+<script src="app/components/about/aboutController.js"></script>
+<script src="app/components/contact/contactController.js"></script>
+<script src="app/components/home/homeController.js"></script>
+<script src="app/components/portfolio/portfolioController.js"></script>
 </html>

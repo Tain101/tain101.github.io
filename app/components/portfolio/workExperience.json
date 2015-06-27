@@ -1,0 +1,24 @@
+[{
+    "location": "Iowa State University, Department of Computer Science",
+    "date": "Summer 2014",
+    "title": "web devlopment",
+    "description": [
+    "Worked with a company rewriting their website to be mobile friendly and better designed"
+    ],
+    "experiences": [
+    "Working with a 3rd party client - How to communicate technical ideas to non-techical people.",
+    "Web development"
+    ]
+}, {
+    "location": "Iowa State University, Department of Computer Science",
+    "date": "Summer 2013",
+    "title": "Web and server development",
+    "description": [
+    "Worked on maintaining and rewriting a homework management sytem."
+    ],
+    "experiences": [
+    "PHP",
+    "Server management",
+    "Code Rewriting"
+    ]
+}]
