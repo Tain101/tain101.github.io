@@ -1,60 +1,77 @@
 websiteApp.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
-        .when('', '/')
         .otherwise('/404');
 
     $stateProvider
-        .state('home', {
-            url: '/',
+        .state('root', {
+            url: '',
 
             views: {
                 "headerView": {
+                    templateUrl: 'app/shared/header/header.html'
+                },
+                "navView": {
+                    templateUrl: 'app/shared/nav/nav.html'
+                },
+                "mainView": {
+                    templateUrl: 'app/components/home/home.html'
+                },
+                "footerView": {
+                    templateUrl: 'app/shared/footer/footer.html'
+                }
+            }
+        })
+        .state('root.home', {
+            url: '/',
+
+            views: {
+                "headerView@": {
                     controller: 'homeController',
                     templateUrl: 'app/shared/header/header.html'
                 },
-                "mainView": {
+                "mainView@": {
                     controller: 'homeController',
                     templateUrl: 'app/components/home/home.html'
                 }
             }
         })
-        .state('about', {
+        .state('root.about', {
             url: '/about',
 
             views: {
-                "headerView": {
-                    controller: 'homeController',
+                "headerView@": {
+                    controller: 'aboutController',
                     templateUrl: 'app/shared/header/header.html'
                 },
-                "mainView": {
-                    controller: 'homeController',
+                "mainView@": {
+                    controller: 'aboutController',
                     templateUrl: 'app/components/about/about.html'
                 }
             }
         })
-        .state('contact', {
+        .state('root.contact', {
             url: '/contact',
 
             views: {
-                "headerView": {
+                "headerView@": {
                     controller: 'contactController',
                     templateUrl: 'app/shared/header/header.html'
                 },
-                "mainView": {
+                "mainView@": {
                     controller: 'contactController',
                     templateUrl: 'app/components/contact/contact.html'
                 }
             }
         })
-        .state('portfolio', {
+        .state('root.portfolio', {
             url: '/portfolio',
 
             views: {
-                "headerView": {
+                "headerView@": {
                     controller: 'portfolioController',
                     templateUrl: 'app/shared/header/header.html'
                 },
-                "mainView": {
+                "mainView@": {
                     controller: 'portfolioController',
                     templateUrl: 'app/components/portfolio/portfolio.html'
                 }
@@ -64,12 +81,12 @@ websiteApp.config(function($stateProvider, $urlRouterProvider) {
             url: '/404',
 
             views: {
-                "headerView": {
+                "headerView@": {
 
                     controller: '404Controller',
                     templateUrl: 'app/shared/header/header.html'
                 },
-                "mainView": {
+                "mainView@": {
                     controller: '404Controller',
                     templateUrl: 'app/components/404/404.html'
                 }

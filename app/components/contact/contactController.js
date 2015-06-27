@@ -1,7 +1,8 @@
-websiteApp.controller('contactController', function($scope) {
+websiteApp.controller('contactController', function($scope, $http) {
     $scope.title = 'Contact Information';
-    $scope.contactInfo = [{
-        'email': 'tain.premo@gmail.com',
-        'githup': 'https://github.com/Tain101'
-    }];
+
+    $http.get('./app/components/contact/contact.json')
+        .then(function(data) {
+            $scope.contactInfo = data.data;
+        });
 });

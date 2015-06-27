@@ -1,15 +1,15 @@
-<article id="main">
-    <header>
-        <h2>Contact Information</h2>
-        <p></p>
-    </header>
-    <section class="wrapper style5">
-        <div class="inner">
-            <h3>Email: </h3>
-            <p>tain.premo@gmail.com</p>
-            <hr />
-            <h4>Github: </h4>
-            <p>https://github.com/Tain101</p>
+<div class="inner">
+    <section class="wrapper style2">
+        <div class="container">
+            <header class="major" ng-repeat="contact in contactInfo">
+                <h3>
+                {{ contact.title }}</h3>
+                <a href="{{ contact.link }}">
+                    <p style="margin-left: auto;margin-right: auto;">
+                    {{ contact.text }}</p>
+                </a>
+                <hr />
+            </header>
         </div>
     </section>
-</article>
+</div>

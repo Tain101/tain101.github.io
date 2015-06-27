@@ -10,7 +10,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-
     </head>
     <body>
         <div id="page-wrapper">
@@ -18,15 +17,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             <div id="header">
                 <div ui-view="headerView"></div>
                 <!-- Nav Bar -->
-                <nav id="nav">
-                    <div ui-view="navView"></div>
-                    <ul>
-                        <li><a ui-sref="home">Home</a></li>
-                        <li><a ui-sref="portfolio">Portfolio</a></li>
-                        <li><a ui-sref="about">About</a></li>
-                        <li><a ui-sref="contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div ui-view="navView"></div>
             </div>
             <!-- Main -->
             <section class="wrapper style1">
@@ -36,42 +27,23 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     </div>
                 </div>
             </section>
-
-
-
             <!-- Footer -->
             <div id="footer">
-            <div ui-view="footerView"></div>
-                <!-- Icons -->
-                <ul class="icons">
-                    <li><a href="mailto:tain.premo@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-                    <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
-                    <!-- <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
-                    <li><a href="https://github.com/Tain101" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                    <!-- <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li> -->
-                    <!-- <li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li> -->
-                </ul>
-                <!-- Copyright -->
-                <div class="copyright">
-                    <ul class="menu">
-                        <li>&copy; Taylor Premo 2015 All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </div>
+                <div ui-view="footerView"></div>
             </div>
         </div>
-
     </div>
 </body>
 <link rel="stylesheet" href="assets/css/main.css" />
-        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.dropotron.min.js"></script>
-        <script src="assets/js/skel.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-        <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
 <!-- <link rel=stylesheet href="assets/style.css"> -->
 <script src="assets/js/angular.min.js"></script>
 <script src="assets/js/angular-ui-router.min.js"></script>
