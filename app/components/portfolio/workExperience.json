@@ -1,24 +1,17 @@
 [{
+    "title": "Web Developer",
+    "date": "May 2014 to Jul 2014",
     "location": "Iowa State University, Department of Computer Science",
-    "date": "Summer 2014",
-    "title": "web devlopment",
-    "description": [
-    "Worked with a company rewriting their website to be mobile friendly and better designed"
-    ],
-    "experiences": [
-    "Working with a 3rd party client - How to communicate technical ideas to non-techical people.",
-    "Web development"
+    "points": [
+        "Worked with 3rd party to create a dynamic website for desktop & mobile use."
     ]
 }, {
+    "title": "Web Developer & Database Management",
+    "date": "May 2013 to Jan 2014",
     "location": "Iowa State University, Department of Computer Science",
-    "date": "Summer 2013",
-    "title": "Web and server development",
-    "description": [
-    "Worked on maintaining and rewriting a homework management sytem."
-    ],
-    "experiences": [
-    "PHP",
-    "Server management",
-    "Code Rewriting"
+    "points": [
+        "Responsible for documenting & understanding previous web application.",
+        "Advising on design choices during rewrite.",
+        "Developing for application rewrite."
     ]
 }]
