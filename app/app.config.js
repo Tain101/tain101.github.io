@@ -63,17 +63,17 @@ websiteApp.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('root.portfolio', {
-            url: '/portfolio',
+        .state('root.experience', {
+            url: '/experience',
 
             views: {
                 "headerView@": {
-                    controller: 'portfolioController',
+                    controller: 'experienceController',
                     templateUrl: 'app/shared/header/header.html'
                 },
                 "mainView@": {
-                    controller: 'portfolioController',
-                    templateUrl: 'app/components/portfolio/portfolio.html'
+                    controller: 'experienceController',
+                    templateUrl: 'app/components/experience/experience.html'
                 }
             }
         })

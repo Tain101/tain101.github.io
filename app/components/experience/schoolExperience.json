@@ -1,0 +1,58 @@
+[{
+    "title": "1st Person Puzzle Game in Java",
+    "link": "https://www.youtube.com/watch?v=CE_3zNcgYRQ",
+    "date": "Jan 2015 to May 2015",
+    "class": "Iowa State - Com S 309",
+    "repository": "",
+    "description": [
+        "A game developed my me and 3 others for a class. The idea is two players much navigate through various puzzles to complete levels.",
+        "One person is the \"Audio\" player, as he cannot see objects as you would expect. Walls aren\"t visible to him, making it harder to navigate, but also allowing him to see more of the map.",
+        "The other player is \"Visual\", he see\"s objects as expected. Allowing him to better understand the layout of the level."
+    ],
+    "points": [
+        "reated a multi-rendering system as a mechanic for the game.",
+        "Led group of four.",
+        "Designed a modular system to create in game objects.",
+        "Created a working prototype using 3D sound, positioning."
+    ]
+}, {
+    "title": "Robot Navigation System in C",
+    "link": "",
+    "date": "Aug 2014 to Dec 2014",
+    "class": "Iowa State - Cpre E 288",
+    "repository": "",
+    "description": [
+        "In a group, we had to design a navigation system for a robot, using infared sensors, cliff sensors, & front bumpers.",
+        "We configured the raw inputs of these sensors to automate several actions for the robot.",
+        "For the final, we needed to navigate an obstacle course without being able to see it or the robot directly."
+    ],
+    "points": [
+        "Created an autonomous navigation system in a small robot.",
+        "Created a visual HUD & manual control system for the robot.",
+        "Worked in a group of 5 to design & implement the system."
+    ]
+}, {
+    "title": "Image Type Converter & Game of Life Visual Implementation in C",
+    "link": "",
+    "date": "Jan 2014 to May 2014",
+    "class": "Iowa State - Com S 229",
+    "repository": "",
+    "description": [],
+    "points": [
+        "Created an application to convert from one image file type to another.",
+        "Application was also able to crop, recolor, & overlay two images.",
+        "In the class we also created a command line GUI & Implementation of Conway’s Game of Life."
+    ]
+}, {
+    "title": "ACM Programming Contest",
+    "link": "",
+    "date": "Oct 2012 to Dec 2012",
+    "class": "Iowa State",
+    "repository": "",
+    "description": [],
+    "points": [
+        "Practiced advanced problem solving problems.",
+        "Competed in State Wide competition.",
+        "Worked with other ISU students during practice & contest."
+    ]
+}]

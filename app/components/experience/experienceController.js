@@ -1,13 +1,13 @@
-websiteApp.controller('portfolioController', ['$scope', '$http', function($scope, $http) {
+websiteApp.controller('experienceController', ['$scope', '$http', function($scope, $http) {
 
-    $scope.title = 'Portfolio';
+    $scope.title = 'Experience';
 
-    $http.get('./app/components/portfolio/Education.json')
+    $http.get('./app/components/experience/Education.json')
         .then(function(data) {
             $scope.Education = data.data[0];
         });
 
-    $http.get('./app/components/portfolio/workExperience.json')
+    $http.get('./app/components/experience/workExperience.json')
         .error(function(data, status, headers, config) {
             console.log(data, status, headers, config);
         })
@@ -15,12 +15,12 @@ websiteApp.controller('portfolioController', ['$scope', '$http', function($scope
             $scope.workExperience = data.data;
         });
 
-    $http.get('./app/components/portfolio/schoolExperience.json')
+    $http.get('./app/components/experience/schoolExperience.json')
         .then(function(data) {
             $scope.schoolExperience = data.data;
         });
 
-    $http.get('./app/components/portfolio/soloProjects.json')
+    $http.get('./app/components/experience/soloProjects.json')
         .then(function(data) {
             $scope.soloProjects = data.data;
         });

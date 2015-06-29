@@ -1,0 +1,58 @@
+<section>
+    <header class="major">
+        <h2>Education</h2>
+    </header>
+    <!-- <div ng-repeat="WExperience in workExperience"> -->
+    <header>
+        <h2>{{ Education.title }}</h2>
+        <p>{{ Education.date }} | {{ Education.status }}</p>
+    </header>
+    <ul ng-repeat="point in Education.points">
+        <li> - {{ point }}</li>
+    </ul>
+</div>
+</section>
+<section>
+<header class="major">
+    <h2>Work Experience</h2>
+</header>
+<div ng-repeat="WExperience in workExperience">
+    <header>
+        <h2>{{ WExperience.title }}</h2>
+        <p>{{ WExperience.date }} | {{ WExperience.location }}</p>
+    </header>
+    <ul ng-repeat="point in WExperience.points">
+        <li> - {{ point }}</li>
+    </ul>
+</div>
+</section>
+<section>
+<header class="major">
+    <h2>School Experiences</h2>
+</header>
+<div ng-repeat="SExperience in schoolExperience">
+    <header>
+        <h2 ng-if="SExperience.link != ''"><a href="{{ SExperience.link }}">{{ SExperience.title }}:</a></h2>
+        <h2 ng-if="SExperience.link == ''">{{ SExperience.title }}:</h2>
+        <a href="{{ SExperience.repository }}"><p ng-if="SExperience.repository != ''">repo</p></a>
+    </header>
+    <ul ng-repeat="point in SExperience.points">
+        <li> - {{ point }}</li>
+    </ul>
+</div>
+</section>
+<section>
+<header class="major">
+    <h2>Solo Projects</h2>
+</header>
+<div ng-repeat="SProject in soloProjects">
+    <h3 ng-if="SProject.link != ''"><a href="{{ SProject.link }}">{{ SProject.title }}:</a></h3>
+    <h3 ng-if="SProject.link == ''">{{ SProject.title }}:</h3>
+    <header>
+        <a href="{{ SProject.repository }}"><p ng-if="SProject.repository != ''">repo</p></a>
+    </header>
+    <ul ng-repeat="point in SProject.points">
+        <li> - {{ point }}</li>
+    </ul>
+</div>
+</section>
